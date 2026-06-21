@@ -33,7 +33,7 @@ class Plant:
 if __name__ == "__main__":
     print("=== Garden Security System ===")
     rose = Plant("Rose", 15.0, 10)
-    print(f"Plant created: ", end="")
+    print("Plant created: ", end="")
     rose.show()
     rose.set_height(25.0)
     rose.set_age(30)

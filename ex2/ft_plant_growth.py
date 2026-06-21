@@ -1,4 +1,8 @@
 class Plant:
+    name: str
+    height: float
+    age_days: int
+
     def show(self) -> None:
         print(f"{self.name}: {self.height}cm, {self.age_days} days old")
 
@@ -24,3 +28,4 @@ if __name__ == "__main__":
         rose.age()
 
     print(f"Growth this week: {round(rose.height - start_height)}cm")
+    # should we use round() here??
