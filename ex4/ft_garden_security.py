@@ -1,16 +1,16 @@
 class Plant:
     def __init__(self, name: str, height: float, age: int) -> None:
         if (height < 0):
-            self.height = 0.0
+            self._height = 0.0
         else:
-            self.height = height
+            self._height = height
 
         if (age < 0):
-            self.age = 0
+            self._age = 0
         else:
-            self.age = age
+            self._age = age
 
-        self.name = name.capitalize()
+        self._name = name.capitalize()
 
     def set_height(self, new_height: float) -> None:
         if (new_height < 0):
